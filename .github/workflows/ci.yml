@@ -57,10 +57,8 @@ jobs:
       - name: Webhook event
         id: metadata
         run: |
-          BODY=$(echo '${{ toJSON(github) }}')
-
           echo "::group::body"
-          echo "$BODY"
+          echo '${{ toJSON(github) }}'
           echo "::endgroup::"
 
       - name: Test Local Action
