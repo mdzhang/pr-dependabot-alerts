@@ -62,6 +62,12 @@ for security events and Dependabot alerts. Refer to the
 [GitHub token permissions documentation](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)
 for more details about access levels and event contexts.
 
+This value needs to be set for
+[Actions](https://github.com/mdzhang/pr-dependabot-alerts/settings/secrets/actions)
+to work on PRs and for
+[Dependabot](https://github.com/mdzhang/pr-dependabot-alerts/settings/secrets/dependabot)
+to run when a new PR is created.
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information on how to contribute.
