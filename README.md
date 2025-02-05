@@ -23,7 +23,7 @@ jobs:
 
   notify-slack:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    if: github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'
     steps:
       - name: Checkout
         id: checkout
