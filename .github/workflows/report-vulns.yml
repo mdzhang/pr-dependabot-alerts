@@ -11,11 +11,11 @@ permissions:
   security-events: read
 
 jobs:
-  notify-slack:
+  report-vulns:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Label
+      - name: Check if PR is vuln fix
         id: vuln-check
         uses: mdzhang/pr-dependabot-alerts@v0.0.1
         with:
