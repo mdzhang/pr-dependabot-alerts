@@ -55,6 +55,13 @@ jobs:
           MSG_MINIMAL: 'actions url,commit'
 ```
 
+## Permissions
+
+In order to add labels to pull requests, this action requires read permissions
+for security events and Dependabot alerts. Refer to the
+[GitHub token permissions documentation](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)
+for more details about access levels and event contexts.
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for information on how to contribute.
