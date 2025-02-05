@@ -19,7 +19,7 @@ on:
 jobs:
   permissions:
     contents: read
-    pull-requests: write
+    security-events: read
 
   notify-slack:
     runs-on: ubuntu-latest
@@ -32,6 +32,8 @@ jobs:
       - name: PR Dependabot alerts
         id: pr-dependabot-alerts
         uses: mdzhang/pr-dependabot-alerts
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send Slack Notification
         if:
