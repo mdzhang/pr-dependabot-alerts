@@ -1,0 +1,22 @@
+---
+name: security-alerts
+
+on:
+  pull_request:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  security-events: read
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Label
+        id: vuln-check
+        uses: mdzhang/pr-dependabot-alerts@v0.0.1
+        with:
+          repo-token: ${{ secrets.GH_TOKEN }}
