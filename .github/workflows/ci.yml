@@ -56,6 +56,7 @@ jobs:
 
       - name: Webhook event
         id: metadata
+        continue-on-error: true
         run: |
           echo "::group::body"
           ${{ toJSON(github) }}
