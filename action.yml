@@ -1,23 +1,18 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: pr-dependabot-alerts
+description:
+  Workflow action that lets you know when a dependabot PR resolves a vuln
+author: mdzhang
 
-# Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: heart
+  icon: shield
   color: red
 
-# Define your inputs here.
-inputs:
-  milliseconds:
-    description: Your input description here
-    required: true
-    default: '1000'
-
-# Define your outputs here.
 outputs:
-  time:
-    description: Your output description here
+  dependabotAlertUrl:
+    description:
+      The link to the dependabot alert that the current PR fixes, if applicable
+  vulnerabilitySeverityLevel:
+    description: The severity of the vulnerability in the alert, if applicable
 
 runs:
   using: node20

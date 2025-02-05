@@ -1,17 +1,17 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "name": "pr-dependabot-alerts",
+  "description": "Workflow action that lets you know when a dependabot PR resolves a vuln",
   "version": "0.0.0",
   "author": "",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/mdzhang/pr-dependabot-alerts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/mdzhang/pr-dependabot-alerts.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/mdzhang/pr-dependabot-alerts/issues"
   },
   "keywords": [
     "actions"
