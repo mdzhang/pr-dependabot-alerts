@@ -1,16 +1,16 @@
 {
   "token": "***",
   "job": "test-action",
-  "ref": "refs/pull/4/merge",
-  "sha": "3a8debba9e4404112dc54a732af2ebbcf85090dc",
+  "ref": "refs/pull/7/merge",
+  "sha": "81f80f9ac4c80f7b271b339766ba82762cb11b4e",
   "repository": "mdzhang/pr-dependabot-alerts",
   "repository_owner": "mdzhang",
   "repository_owner_id": "3429763",
   "repositoryUrl": "git://github.com/mdzhang/pr-dependabot-alerts.git",
-  "run_id": "13166532361",
-  "run_number": "41",
+  "run_id": "13167324278",
+  "run_number": "51",
   "retention_days": "90",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "artifact_cache_size_limit": "10",
   "repository_visibility": "public",
   "repo-self-hosted-runners-disabled": false,
@@ -20,46 +20,46 @@
   "actor": "mdzhang",
   "triggering_actor": "mdzhang",
   "workflow": "Continuous Integration",
-  "head_ref": "mdz/impl",
+  "head_ref": "dependabot/npm_and_yarn/nanoid-3.3.8",
   "base_ref": "main",
   "event_name": "pull_request",
   "event": {
     "action": "synchronize",
-    "after": "4dfe59e6ee94dddb2e804142c5a407e5cfe390de",
-    "before": "a8860155be72817c0cd12c00f0fc15959c1dc1cc",
-    "number": 4,
+    "after": "eecd5141301c90d4cf3e223bf2d4f81835baca73",
+    "before": "854d8b47319bbec0030a7772f382eecdf857c24b",
+    "number": 7,
     "pull_request": {
       "_links": {
         "comments": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/4/comments"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/7/comments"
         },
         "commits": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4/commits"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7/commits"
         },
         "html": {
-          "href": "https://github.com/mdzhang/pr-dependabot-alerts/pull/4"
+          "href": "https://github.com/mdzhang/pr-dependabot-alerts/pull/7"
         },
         "issue": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/4"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/7"
         },
         "review_comment": {
           "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/comments{/number}"
         },
         "review_comments": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4/comments"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7/comments"
         },
         "self": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7"
         },
         "statuses": {
-          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/statuses/4dfe59e6ee94dddb2e804142c5a407e5cfe390de"
+          "href": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/statuses/eecd5141301c90d4cf3e223bf2d4f81835baca73"
         }
       },
       "active_lock_reason": null,
-      "additions": 4382,
+      "additions": 7,
       "assignee": null,
       "assignees": [],
-      "author_association": "OWNER",
+      "author_association": "NONE",
       "auto_merge": null,
       "base": {
         "label": "mdzhang:main",
@@ -116,7 +116,7 @@
           "issues_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues{/number}",
           "keys_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/keys{/key_id}",
           "labels_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/labels{/name}",
-          "language": "Shell",
+          "language": "TypeScript",
           "languages_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/languages",
           "license": {
             "key": "mit",
@@ -133,8 +133,8 @@
           "name": "pr-dependabot-alerts",
           "node_id": "R_kgDON02nww",
           "notifications_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/notifications{?since,all,participating}",
-          "open_issues": 4,
-          "open_issues_count": 4,
+          "open_issues": 3,
+          "open_issues_count": 3,
           "owner": {
             "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
             "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
@@ -158,7 +158,7 @@
           },
           "private": false,
           "pulls_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls{/number}",
-          "pushed_at": "2025-02-05T21:03:55Z",
+          "pushed_at": "2025-02-05T21:57:57Z",
           "releases_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/releases{/id}",
           "size": 340,
           "squash_merge_commit_message": "COMMIT_MESSAGES",
@@ -174,7 +174,7 @@
           "teams_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/teams",
           "topics": [],
           "trees_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/git/trees{/sha}",
-          "updated_at": "2025-02-05T19:52:28Z",
+          "updated_at": "2025-02-05T21:55:36Z",
           "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts",
           "use_squash_pr_title_as_default": false,
           "visibility": "public",
@@ -182,7 +182,7 @@
           "watchers_count": 0,
           "web_commit_signoff_required": false
         },
-        "sha": "4baaf658754f043117ad02e51144ffddc3af65d1",
+        "sha": "7f57a9933c763e17dccc3ea716a1398946e41b72",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
           "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
@@ -205,20 +205,20 @@
           "user_view_type": "public"
         }
       },
-      "body": "[docs](https://docs.github.com/en/rest/dependabot/alerts?apiVersion=2022-11-28#list-dependabot-alerts-for-a-repository)",
-      "changed_files": 9,
+      "body": "Bumps [nanoid](https://github.com/ai/nanoid) from 3.3.6 to 3.3.8.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ai/nanoid/blob/main/CHANGELOG.md\">nanoid''s changelog</a>.</em></p>\n<blockquote>\n<h2>3.3.8</h2>\n<ul>\n<li>Fixed a way to break Nano ID by passing non-integer size (by <a href=\"https://github.com/myndzi\"><code>@​myndzi</code></a>).</li>\n</ul>\n<h2>3.3.7</h2>\n<ul>\n<li>Fixed <code>node16</code> TypeScript support (by Saadi Myftija).</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ai/nanoid/commit/3044cd5e73f4cf31795f61f6e6b961c8c0a5c744\"><code>3044cd5</code></a> Release 3.3.8 version</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/4fe34959c34e5b3573889ed4f24fe91d1d3e7231\"><code>4fe3495</code></a> Update size limit</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/d643045f40d6dc8afa000a644d857da1436ed08c\"><code>d643045</code></a> Fix pool pollution, infinite loop (<a href=\"https://redirect.github.com/ai/nanoid/issues/510\">#510</a>)</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/89d82d2ce4b0411e73ac7ccfe57bc03e932416e2\"><code>89d82d2</code></a> Release 3.3.7 version</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/5022c35acaaedd9da4b56cad37b02bbcb87635e1\"><code>5022c35</code></a> Update dual-publish</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/3e7a8e557b9d93a582ef2c3bb9f7306fc339ef35\"><code>3e7a8e5</code></a> Remove benchmark from CI for v3</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/d3561446aee52fdf38325e1d30c905d989a8ccd2\"><code>d356144</code></a> Fix CI for v3</li>\n<li><a href=\"https://github.com/ai/nanoid/commit/37b25dfac2edfd73d7bbc88886e4c6067fac8619\"><code>37b25df</code></a> Move to pnpm 8</li>\n<li>See full diff in <a href=\"https://github.com/ai/nanoid/compare/3.3.6...3.3.8\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nanoid&package-manager=npm_and_yarn&previous-version=3.3.6&new-version=3.3.8)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don''t alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/mdzhang/pr-dependabot-alerts/network/alerts).\n\n</details>",
+      "changed_files": 3,
       "closed_at": null,
-      "comments": 0,
-      "comments_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/4/comments",
-      "commits": 6,
-      "commits_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4/commits",
-      "created_at": "2025-02-05T17:12:08Z",
-      "deletions": 146,
-      "diff_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/4.diff",
-      "draft": true,
+      "comments": 1,
+      "comments_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/7/comments",
+      "commits": 2,
+      "commits_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7/commits",
+      "created_at": "2025-02-05T18:30:25Z",
+      "deletions": 6,
+      "diff_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/7.diff",
+      "draft": false,
       "head": {
-        "label": "mdzhang:mdz/impl",
-        "ref": "mdz/impl",
+        "label": "mdzhang:dependabot/npm_and_yarn/nanoid-3.3.8",
+        "ref": "dependabot/npm_and_yarn/nanoid-3.3.8",
         "repo": {
           "allow_auto_merge": false,
           "allow_forking": true,
@@ -271,7 +271,7 @@
           "issues_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues{/number}",
           "keys_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/keys{/key_id}",
           "labels_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/labels{/name}",
-          "language": "Shell",
+          "language": "TypeScript",
           "languages_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/languages",
           "license": {
             "key": "mit",
@@ -288,8 +288,8 @@
           "name": "pr-dependabot-alerts",
           "node_id": "R_kgDON02nww",
           "notifications_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/notifications{?since,all,participating}",
-          "open_issues": 4,
-          "open_issues_count": 4,
+          "open_issues": 3,
+          "open_issues_count": 3,
           "owner": {
             "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
             "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
@@ -313,7 +313,7 @@
           },
           "private": false,
           "pulls_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls{/number}",
-          "pushed_at": "2025-02-05T21:03:55Z",
+          "pushed_at": "2025-02-05T21:57:57Z",
           "releases_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/releases{/id}",
           "size": 340,
           "squash_merge_commit_message": "COMMIT_MESSAGES",
@@ -329,7 +329,7 @@
           "teams_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/teams",
           "topics": [],
           "trees_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/git/trees{/sha}",
-          "updated_at": "2025-02-05T19:52:28Z",
+          "updated_at": "2025-02-05T21:55:36Z",
           "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts",
           "use_squash_pr_title_as_default": false,
           "visibility": "public",
@@ -337,7 +337,7 @@
           "watchers_count": 0,
           "web_commit_signoff_required": false
         },
-        "sha": "4dfe59e6ee94dddb2e804142c5a407e5cfe390de",
+        "sha": "eecd5141301c90d4cf3e223bf2d4f81835baca73",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
           "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
@@ -360,52 +360,93 @@
           "user_view_type": "public"
         }
       },
-      "html_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/4",
-      "id": 2318128631,
-      "issue_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/4",
-      "labels": [],
+      "html_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/7",
+      "id": 2318271073,
+      "issue_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues/7",
+      "labels": [
+        {
+          "color": "0366d6",
+          "default": false,
+          "description": "Pull requests that update a dependency file",
+          "id": 8105461635,
+          "name": "dependencies",
+          "node_id": "LA_kwDON02nw88AAAAB4x-Hgw",
+          "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/labels/dependencies"
+        },
+        {
+          "color": "168700",
+          "default": false,
+          "description": "Pull requests that update Javascript code",
+          "id": 8105461648,
+          "name": "javascript",
+          "node_id": "LA_kwDON02nw88AAAAB4x-HkA",
+          "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/labels/javascript"
+        }
+      ],
       "locked": false,
       "maintainer_can_modify": false,
-      "merge_commit_sha": "ec6f564e37703a166a92de342b0794effcb31806",
+      "merge_commit_sha": "7529ddd8b86dceb77ef65d12640f52faaf24a907",
       "mergeable": null,
       "mergeable_state": "unknown",
       "merged": false,
       "merged_at": null,
       "merged_by": null,
       "milestone": null,
-      "node_id": "PR_kwDON02nw86KK9X3",
-      "number": 4,
-      "patch_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/4.patch",
+      "node_id": "PR_kwDON02nw86KLgJh",
+      "number": 7,
+      "patch_url": "https://github.com/mdzhang/pr-dependabot-alerts/pull/7.patch",
       "rebaseable": null,
-      "requested_reviewers": [],
+      "requested_reviewers": [
+        {
+          "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
+          "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
+          "followers_url": "https://api.github.com/users/mdzhang/followers",
+          "following_url": "https://api.github.com/users/mdzhang/following{/other_user}",
+          "gists_url": "https://api.github.com/users/mdzhang/gists{/gist_id}",
+          "gravatar_id": "",
+          "html_url": "https://github.com/mdzhang",
+          "id": 3429763,
+          "login": "mdzhang",
+          "node_id": "MDQ6VXNlcjM0Mjk3NjM=",
+          "organizations_url": "https://api.github.com/users/mdzhang/orgs",
+          "received_events_url": "https://api.github.com/users/mdzhang/received_events",
+          "repos_url": "https://api.github.com/users/mdzhang/repos",
+          "site_admin": false,
+          "starred_url": "https://api.github.com/users/mdzhang/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/mdzhang/subscriptions",
+          "type": "User",
+          "url": "https://api.github.com/users/mdzhang",
+          "user_view_type": "public"
+        }
+      ],
       "requested_teams": [],
       "review_comment_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/comments{/number}",
       "review_comments": 0,
-      "review_comments_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4/comments",
+      "review_comments_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7/comments",
       "state": "open",
-      "statuses_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/statuses/4dfe59e6ee94dddb2e804142c5a407e5cfe390de",
-      "title": "[security] Implementation",
-      "updated_at": "2025-02-05T21:03:57Z",
-      "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/4",
+      "statuses_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/statuses/eecd5141301c90d4cf3e223bf2d4f81835baca73",
+      "title": "Bump nanoid from 3.3.6 to 3.3.8",
+      "updated_at": "2025-02-05T21:57:58Z",
+      "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls/7",
       "user": {
-        "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
-        "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
-        "followers_url": "https://api.github.com/users/mdzhang/followers",
-        "following_url": "https://api.github.com/users/mdzhang/following{/other_user}",
-        "gists_url": "https://api.github.com/users/mdzhang/gists{/gist_id}",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+        "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+        "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
         "gravatar_id": "",
-        "html_url": "https://github.com/mdzhang",
-        "id": 3429763,
-        "login": "mdzhang",
-        "node_id": "MDQ6VXNlcjM0Mjk3NjM=",
-        "organizations_url": "https://api.github.com/users/mdzhang/orgs",
-        "received_events_url": "https://api.github.com/users/mdzhang/received_events",
-        "repos_url": "https://api.github.com/users/mdzhang/repos",
+        "html_url": "https://github.com/apps/dependabot",
+        "id": 49699333,
+        "login": "dependabot[bot]",
+        "node_id": "MDM6Qm90NDk2OTkzMzM=",
+        "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+        "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+        "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
         "site_admin": false,
-        "starred_url": "https://api.github.com/users/mdzhang/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/mdzhang/subscriptions",
-        "type": "User",
-        "url": "https://api.github.com/users/mdzhang",
+        "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+        "type": "Bot",
+        "url": "https://api.github.com/users/dependabot%5Bbot%5D",
         "user_view_type": "public"
       }
     },
@@ -455,7 +496,7 @@
       "issues_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/issues{/number}",
       "keys_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/keys{/key_id}",
       "labels_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/labels{/name}",
-      "language": "Shell",
+      "language": "TypeScript",
       "languages_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/languages",
       "license": {
         "key": "mit",
@@ -470,8 +511,8 @@
       "name": "pr-dependabot-alerts",
       "node_id": "R_kgDON02nww",
       "notifications_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/notifications{?since,all,participating}",
-      "open_issues": 4,
-      "open_issues_count": 4,
+      "open_issues": 3,
+      "open_issues_count": 3,
       "owner": {
         "avatar_url": "https://avatars.githubusercontent.com/u/3429763?v=4",
         "events_url": "https://api.github.com/users/mdzhang/events{/privacy}",
@@ -495,7 +536,7 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/pulls{/number}",
-      "pushed_at": "2025-02-05T21:03:55Z",
+      "pushed_at": "2025-02-05T21:57:57Z",
       "releases_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/releases{/id}",
       "size": 340,
       "ssh_url": "git@github.com:mdzhang/pr-dependabot-alerts.git",
@@ -509,7 +550,7 @@
       "teams_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/teams",
       "topics": [],
       "trees_url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/git/trees{/sha}",
-      "updated_at": "2025-02-05T19:52:28Z",
+      "updated_at": "2025-02-05T21:55:36Z",
       "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts",
       "visibility": "public",
       "watchers": 0,
@@ -541,20 +582,20 @@
   "server_url": "https://github.com",
   "api_url": "https://api.github.com",
   "graphql_url": "https://api.github.com/graphql",
-  "ref_name": "4/merge",
+  "ref_name": "7/merge",
   "ref_protected": false,
   "ref_type": "branch",
   "secret_source": "Actions",
-  "workflow_ref": "mdzhang/pr-dependabot-alerts/.github/workflows/ci.yml@refs/pull/4/merge",
-  "workflow_sha": "3a8debba9e4404112dc54a732af2ebbcf85090dc",
+  "workflow_ref": "mdzhang/pr-dependabot-alerts/.github/workflows/ci.yml@refs/pull/7/merge",
+  "workflow_sha": "81f80f9ac4c80f7b271b339766ba82762cb11b4e",
   "workspace": "/home/runner/work/pr-dependabot-alerts/pr-dependabot-alerts",
   "action": "metadata",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_eceb1497-4358-4c11-829f-693df94d7431",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_eceb1497-4358-4c11-829f-693df94d7431",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_eceb1497-4358-4c11-829f-693df94d7431",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_eceb1497-4358-4c11-829f-693df94d7431",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_eceb1497-4358-4c11-829f-693df94d7431"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_a47807c9-67a6-4ca2-9618-cb095c41d82e",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_a47807c9-67a6-4ca2-9618-cb095c41d82e",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_a47807c9-67a6-4ca2-9618-cb095c41d82e",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_a47807c9-67a6-4ca2-9618-cb095c41d82e",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_a47807c9-67a6-4ca2-9618-cb095c41d82e"
 }

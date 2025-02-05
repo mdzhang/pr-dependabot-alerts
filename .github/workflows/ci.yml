@@ -54,13 +54,6 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Webhook event
-        id: metadata
-        run: |
-          echo "::group::body"
-          echo '${{ toJSON(github) }}'
-          echo "::endgroup::"
-
       - name: Test Local Action
         id: test-action
         uses: ./
