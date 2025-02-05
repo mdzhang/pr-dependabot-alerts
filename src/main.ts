@@ -18,7 +18,9 @@ export async function run(): Promise<void> {
     const repoName = context.repo.repo
 
     if (!context.payload.pull_request) {
-      core.setFailed('This action must be run on a pull request.')
+      core.setOutput('dependabotAlertUrl', null)
+      core.setOutput('vulnerabilitySeverityLevel', null)
+      core.info('This action must be run on a pull request')
       return
     }
 

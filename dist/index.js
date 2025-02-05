@@ -33910,7 +33910,9 @@ async function run() {
         const orgName = context.repo.owner;
         const repoName = context.repo.repo;
         if (!context.payload.pull_request) {
-            coreExports.setFailed('This action must be run on a pull request.');
+            coreExports.setOutput('dependabotAlertUrl', null);
+            coreExports.setOutput('vulnerabilitySeverityLevel', null);
+            coreExports.info('This action must be run on a pull request');
             return;
         }
         const pr = context.payload.pull_request;
