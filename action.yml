@@ -7,6 +7,12 @@ branding:
   icon: shield
   color: red
 
+inputs:
+  repo-token:
+    description: 'The GitHub token used to read dependabot alerts'
+    required: false
+    default: ${{ github.token }}
+
 outputs:
   dependabotAlertUrl:
     description:
