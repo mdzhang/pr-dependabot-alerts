@@ -72,14 +72,14 @@ For more information about the GitHub Actions toolkit, see the
    - Terminal/Command Prompt
 
      ```bash
+     cp .env.example .env
      # npx local action <action-yaml-path> <entrypoint> <dotenv-file>
      npx local-action . src/main.ts .env
      ```
 
    You can provide a `.env` file to the `local-action` CLI to set environment
    variables used by the GitHub Actions Toolkit. For example, setting inputs and
-   event payload data used by your action. For more information, see the example
-   file, [`.env.example`](./.env.example), and the
+   event payload data used by your action. For more information, see the
    [GitHub Actions Documentation](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables).
 
 ## Releasing

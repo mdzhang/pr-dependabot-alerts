@@ -54,10 +54,23 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
+      - name: Webhook event
+        id: metadata
+        run: |
+          BODY=$(echo '${{ toJSON(github) }}')
+
+          echo "::group::body"
+          echo "$BODY"
+          echo "::endgroup::"
+
       - name: Test Local Action
         id: test-action
         uses: ./
+        with:
+          repo-token: ${{ secrets.GH_TOKEN }}
 
       - name: Print Output
         id: output
-        run: echo "${{ steps.test-action.outputs.vulnerabilitySeverityLevel }}"
+        run: |
+          echo "url: ${{ steps.test-action.outputs.dependabotAlertUrl }}"
+          echo "severity: ${{ steps.test-action.outputs.vulnerabilitySeverityLevel }}"

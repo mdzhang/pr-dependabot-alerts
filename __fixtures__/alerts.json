@@ -1,0 +1,148 @@
+{
+  "status": 200,
+  "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/dependabot/alerts",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+    "cache-control": "private, max-age=60, s-maxage=60",
+    "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 05 Feb 2025 20:06:09 GMT",
+    "etag": "W/\"a240753cd50f0494090d0cb4b41d01ae78ed1900b6b8326e8a98804e647e2868\"",
+    "last-modified": "Wed, 05 Feb 2025 17:27:14 GMT",
+    "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "server": "github.com",
+    "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+    "transfer-encoding": "chunked",
+    "vary": "Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With",
+    "x-accepted-github-permissions": "vulnerability_alerts=read",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-github-api-version-selected": "2022-11-28",
+    "x-github-media-type": "github.v3; format=json",
+    "x-github-request-id": "33C0:34FE07:1BEB50B:37F8B25:67A3C4B1",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4950",
+    "x-ratelimit-reset": "1738788621",
+    "x-ratelimit-resource": "core",
+    "x-ratelimit-used": "50",
+    "x-xss-protection": "0"
+  },
+  "data": [
+    {
+      "number": 1,
+      "state": "open",
+      "dependency": {
+        "package": {
+          "ecosystem": "npm",
+          "name": "nanoid"
+        },
+        "manifest_path": "package-lock.json",
+        "scope": "development"
+      },
+      "security_advisory": {
+        "ghsa_id": "GHSA-mwcw-c2x4-8c55",
+        "cve_id": "CVE-2024-55565",
+        "summary": "Predictable results in nanoid generation when given non-integer values",
+        "description": "When nanoid is called with a fractional value, there were a number of undesirable effects:\n\n1. in browser and non-secure, the code infinite loops on while (size--)\n2. in node, the value of poolOffset becomes fractional, causing calls to nanoid to return zeroes until the pool is next filled\n3. if the first call in node is a fractional argument, the initial buffer allocation fails with an error\n\nVersion 3.3.8 and 5.0.9 are fixed.",
+        "severity": "medium",
+        "identifiers": [
+          {
+            "value": "GHSA-mwcw-c2x4-8c55",
+            "type": "GHSA"
+          },
+          {
+            "value": "CVE-2024-55565",
+            "type": "CVE"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-55565"
+          },
+          {
+            "url": "https://github.com/ai/nanoid/pull/510"
+          },
+          {
+            "url": "https://github.com/ai/nanoid/compare/3.3.7...3.3.8"
+          },
+          {
+            "url": "https://github.com/ai/nanoid/releases/tag/5.0.9"
+          },
+          {
+            "url": "https://github.com/advisories/GHSA-mwcw-c2x4-8c55"
+          }
+        ],
+        "published_at": "2024-12-09T03:30:59Z",
+        "updated_at": "2024-12-13T22:57:32Z",
+        "withdrawn_at": null,
+        "vulnerabilities": [
+          {
+            "package": {
+              "ecosystem": "npm",
+              "name": "nanoid"
+            },
+            "severity": "medium",
+            "vulnerable_version_range": ">= 4.0.0, < 5.0.9",
+            "first_patched_version": {
+              "identifier": "5.0.9"
+            }
+          },
+          {
+            "package": {
+              "ecosystem": "npm",
+              "name": "nanoid"
+            },
+            "severity": "medium",
+            "vulnerable_version_range": "< 3.3.8",
+            "first_patched_version": {
+              "identifier": "3.3.8"
+            }
+          }
+        ],
+        "cvss_severities": {
+          "cvss_v3": {
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+            "score": 4.3
+          },
+          "cvss_v4": {
+            "vector_string": null,
+            "score": 0
+          }
+        },
+        "cvss": {
+          "vector_string": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+          "score": 4.3
+        },
+        "cwes": [
+          {
+            "cwe_id": "CWE-835",
+            "name": "Loop with Unreachable Exit Condition ('Infinite Loop')"
+          }
+        ]
+      },
+      "security_vulnerability": {
+        "package": {
+          "ecosystem": "npm",
+          "name": "nanoid"
+        },
+        "severity": "medium",
+        "vulnerable_version_range": "< 3.3.8",
+        "first_patched_version": {
+          "identifier": "3.3.8"
+        }
+      },
+      "url": "https://api.github.com/repos/mdzhang/pr-dependabot-alerts/dependabot/alerts/1",
+      "html_url": "https://github.com/mdzhang/pr-dependabot-alerts/security/dependabot/1",
+      "created_at": "2025-02-05T17:26:07Z",
+      "updated_at": "2025-02-05T17:27:14Z",
+      "dismissed_at": null,
+      "dismissed_by": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "fixed_at": null,
+      "auto_dismissed_at": null
+    }
+  ]
+}
