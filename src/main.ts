@@ -1,6 +1,7 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import { RequestError } from '@octokit/request-error'
+import { matchAlert } from './match.js'
 
 /**
  * The main function for the action.
@@ -46,6 +47,7 @@ export async function run(): Promise<void> {
     )
 
     const alerts = alertsResponse.data
+    core.debug(`Alerts response\n${JSON.stringify(alerts)}`)
 
     if (alerts.length === 0) {
       core.setOutput('dependabotAlertUrl', null)
@@ -56,28 +58,20 @@ export async function run(): Promise<void> {
       return
     }
 
-    const severities = {
-      critical: 1,
-      high: 2,
-      medium: 3, // what shows in event payloads
-      moderate: 3, // what shows in the UI
-      low: 4
+    const alert = matchAlert(alerts, pr)
+
+    if (alert === null || alert === undefined) {
+      core.setOutput('dependabotAlertUrl', null)
+      core.setOutput('vulnerabilitySeverityLevel', null)
+      core.info('PR is not a Dependabot security update. No matched alert')
+      return
     }
-
-    const highestSeverityAlert = alerts.sort((a, b) => {
-      return (
-        severities[a.security_vulnerability.severity] -
-        severities[b.security_vulnerability.severity]
-      )
-    })[0]
-
-    core.debug(`Alerts response\n${JSON.stringify(alerts)}`)
 
     let alertUrl: string | null = null
     let severity: string | null = null
 
-    severity = highestSeverityAlert.security_vulnerability.severity
-    alertUrl = highestSeverityAlert.html_url
+    severity = alert.security_vulnerability.severity
+    alertUrl = alert.html_url
 
     core.setOutput('dependabotAlertUrl', alertUrl || '')
     core.setOutput('vulnerabilitySeverityLevel', severity || '')

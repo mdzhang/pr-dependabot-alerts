@@ -58,7 +58,7 @@ jobs:
         id: metadata
         run: |
           echo "::group::body"
-          echo '${{ toJSON(github) }}'
+          '${{ toJSON(github) }}'
           echo "::endgroup::"
 
       - name: Test Local Action
