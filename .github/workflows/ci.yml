@@ -59,7 +59,7 @@ jobs:
         id: test-action
         uses: ./
         with:
-          repo-token: ${{ secrets.GH_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print Output
         id: output

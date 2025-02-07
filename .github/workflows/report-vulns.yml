@@ -19,4 +19,4 @@ jobs:
         id: vuln-check
         uses: mdzhang/pr-dependabot-alerts@v0.0.1
         with:
-          repo-token: ${{ secrets.GH_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
