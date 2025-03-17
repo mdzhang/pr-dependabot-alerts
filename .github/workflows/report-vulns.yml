@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: Check if PR is vuln fix
         id: vuln-check
-        uses: mdzhang/pr-dependabot-alerts@v0.0.1
+        uses: mdzhang/pr-dependabot-alerts@v0.0.2
         with:
           repo-token: ${{ secrets.GH_TOKEN }}
